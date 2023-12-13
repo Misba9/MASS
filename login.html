@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/82fd3ad92d.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <title>Transparent Login Form</title>
+    <script src="https://kit.fontawesome.com/82fd3ad92d.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    * {
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500&display=swap');
+    margin: 0;
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Indie+Flower&family=Oswald:wght@500&display=swap');
+    padding: 0;
+}
+
+body {
+    /* background-image: url(img2.jpg); */
+    background-size: cover;
+    background-size: 100% 100vh;
+}
+
+.container {
+    color: rgb(37, 19, 100);
+    background-color: antiquewhite;
+    position: absolute;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    background: rgb(195, 241, 238);
+    border-radius: 10px;
+}
+
+.container h1 {
+    font-family: 'Anton', sans-serif;
+    display: inline-block;
+    font-size: 40px;
+    border-bottom: 5px solid palegreen;
+    margin-bottom: 26px;
+    padding: 12px 0;
+    
+}
+
+.box {
+    font-family: 'Anton', sans-serif;
+    width: 100%;
+    margin: 30px 0px;
+}
+.bot{
+    border-bottom: 2px solid purple;
+}
+
+.box .input {
+    font-family: 'Anton', sans-serif;
+    widows: 79%;
+    background: none;
+    border: none;
+    outline: none;
+    color: rgb(31, 28, 28);
+    padding: 5px 0;
+    font-size: 25px;
+}
+
+.btn {
+    font-family: 'Anton', sans-serif;
+    color: rgb(26, 10, 87);
+    cursor: pointer;
+    outline: none;
+    margin: 15px 7px;
+    padding: 8px;
+    border: 1px solid purple;
+    border-radius: 13px;
+    font-size: 18px;
+    background: none;
+}
+
+.btn:hover {
+    background-color: thistle;
+    /* border: none; */
+    color: purple;
+}
+
+.box i {
+    width: 35px;
+    text-align: center;
+}
+.otp-box{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.otp-box .otp{
+    border: none;
+    max-width: 20%;
+    height: 60px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 25px;
+    background: bisque;
+    border-bottom: transparent;
+}
+.otp-box .otp:hover{
+    outline: 1.5px solid #000201;
+    outline-offset: 2px;
+}
+.otp-box .otp::-webkit-inner-spin-button,
+.otp-box .otp::-webkit-inner-spin-button{
+    display: none;
+}
+</style>
+<body>
+    <div class="container">
+        <h1>Log In</h1>
+        <div class="box bot">
+            <i class="fa-solid fa-phone"></i>
+            <input class="input" type="phone" name="phone" id="phone" placeholder="Mobile Number">
+        </div>
+        <button class="btn">Verify</button>
+        <div class=".box otp-box">
+            <input class="otp" type="number">
+            <input class="otp" type="number">
+            <input class="otp" type="number">
+            <input class="otp" type="number">
+        </div>
+        <button class="btn">Verify OTP</button>
+    </div>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .otp-container {
+      text-align: center;
+    }
+
+    .otp-input {
+      width: 2em;
+      font-size: 1.5em;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ccc;
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="otp-container">
+  <label for="otp">Enter OTP:</label>
+  <input type="text" id="otp" class="otp-input" maxlength="1">
+  <input type="text" id="otp" class="otp-input" maxlength="1">
+  <input type="text" id="otp" class="otp-input" maxlength="1">
+  <input type="text" id="otp" class="otp-input" maxlength="1">
+</div>
+
+</body>
+</html>
